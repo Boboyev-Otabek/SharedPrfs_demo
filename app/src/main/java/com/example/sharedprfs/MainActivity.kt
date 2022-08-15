@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
 
           text.text=  PrefsManager.getInstance(this).loaddata("Full Name")+"\n"+PrefsManager.getInstance(this).loaddata("Email")+"\n"+
                   PrefsManager.getInstance(this).loaddata("Password")+"\n"+PrefsManager.getInstance(this).loaddata("Confirm password")
+            Toast.makeText(this, "Load data", Toast.LENGTH_SHORT).show()
         }
     }
 
