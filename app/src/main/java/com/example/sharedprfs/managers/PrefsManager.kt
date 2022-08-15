@@ -32,7 +32,4 @@ class PrefsManager(var context: Context) {
         return if (sharedPreferences != null) sharedPreferences.getString(key, "not data")!!
         else ""
     }
-    fun clearAll(){
-        sharedPreferences.edit().clear().commit()
-    }
 }
